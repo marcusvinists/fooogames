@@ -18,7 +18,10 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/carousel.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
+
+        <!-- Custom menu style -->
+        <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
 
 
 
@@ -57,18 +60,30 @@
                                         <li><a href="#">Separated link</a></li>
                                         <li><a href="#">One more separated link</a></li>
                                     </ul>
+                                </li>                                
+                            </ul>                            
+                            <form class="navbar-form navbar-right" id="search">
+                                <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                            </form>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log in <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <form class="navbar-form navbar-center">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Email" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" placeholder="Password" class="form-control">
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Log  in</button>
+                                                <button type="submit" class="btn btn-success">Sign in</button>
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                            <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Log  in</button>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
                         </div>
                     </div>
                 </nav>
