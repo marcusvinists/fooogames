@@ -6,6 +6,6 @@
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/foogames?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">foogames</property>
-    <property name="hibernate.connection.password">foo123</property>
+    <property name="hibernate.connection.password">foogames</property>
   </session-factory>
 </hibernate-configuration>
