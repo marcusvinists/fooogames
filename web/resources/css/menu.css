@@ -21,6 +21,15 @@ display: block;
 display: block;
 }
 
-#upperNavbarContainer{
-    background-color: white;
+#navbarContainer{
+    
+}
+
+#bigNavbarContainer{
+    width: 70%;
+}
+
+#navbarFloater{
+    float: left;
+    clear: both;
 }

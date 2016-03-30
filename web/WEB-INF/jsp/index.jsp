@@ -30,30 +30,11 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
+        <div id="navbarFloater">
         <div class="navbar-wrapper">
-            
-            <div  class="container">
-                <nav class="navbar navbar-inverse navbar-static-top">
-                    <div id="upperNavbarContainer" class="container">
-                        <div  class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                             <form class="navbar-form navbar-right" id="search">
-                                <input type="text" class="form-control" placeholder="Search..." id="searchInput">
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            
-            
-            <div class="container">
-
-                <nav class="navbar navbar-inverse navbar-static-top">
-                    <div class="container">
+            <div id="bigNavbarContainer" class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">                    
+                    <div id="navbarContainer"  class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
@@ -61,8 +42,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">FooGames</a>
+                            <a class="navbar-brand" href="${pageContext.request.contextPath}/index.htm">FooGames</a>
                         </div>
+
+                        <div  class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-right" id="search">
+                                <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                            </form>
+                        </div>
+
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
@@ -126,7 +119,7 @@
                                     </ul>
                                 </li>    
                             </ul>                            
-                           
+
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log in <span class="caret"></span></a>
@@ -152,10 +145,11 @@
 
             </div>
         </div>
-
+        </div>
 
         <!-- Carousel
         ================================================== -->
+        <div id="myCarouselWrapper">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -167,12 +161,12 @@
                 <div class="item active">
                     <img class="first-slide" src="${pageContext.request.contextPath}/resources/images/index/718x305_quantumbreak_SB.jpg" alt="First slide">
                 </div>
-                
+
                 <div class="item">
                     <img class="second-slide" src="${pageContext.request.contextPath}/resources/images/index/darksouls.jpg" alt="Second slide">  
                 </div>
-                
-                    <div class="item">
+
+                <div class="item">
                     <img class="third-slide" src="${pageContext.request.contextPath}/resources/images/index/division.jpg" alt="Third slide">
                 </div>
             </div>
@@ -185,7 +179,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div><!-- /.carousel -->
-
+        </div>
 
         <!-- Marketing messaging and featurettes
         ================================================== -->
