@@ -33,10 +33,25 @@ This css is used to change the FooGames menu
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+body { 
+    margin-top: 10%;
+    padding-top: 20px; 
+}
+@media screen and (min-width:768px) and (max-width:990px) {
+  body {
+    margin-top:200px;
+  }
+}
+@media screen and (min-width:991px) and (max-width:1200px) {
+  body {
+    margin-top:170px;
+  }
+}
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
+    
   }
   .navbar-wrapper .container {
     padding-right: 15px;
