@@ -101,3 +101,9 @@ body {
   }  
 }
 
+/* TWEAKS
+------------------------------------------------- */
+.featuredWords{
+    color: red;
+    font-weight: bolder;
+}

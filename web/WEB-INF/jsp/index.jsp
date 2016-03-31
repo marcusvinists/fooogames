@@ -250,11 +250,11 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading"><span class="text-muted">Check our special promotion.</span></h2>
+                    <p class="lead">Upon buying a Playstation 4 console gain up to $100,00 discount on a game bundle purchase.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="${pageContext.request.contextPath}/resources/images/index/PlayStation4_1864x1048.jpg" alt="Generic placeholder image">
                 </div>
             </div>
 
@@ -262,8 +262,7 @@
 
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading"><span class="text-muted">Buy two games on the list and gain a third one totally <span class="featuredWords">FREE</span>.</span></h2>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
                     <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -290,7 +289,7 @@
             <!-- FOOTER -->
             <footer>
                 <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                <p>&copy; 2015 FooGames, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
             </footer>
 
         </div><!-- /.container -->
