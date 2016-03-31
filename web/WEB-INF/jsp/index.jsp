@@ -141,7 +141,9 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="http://www.jquery2dotnet.com">Sign Up</a></li>
                                     <li class="dropdown">
-                                        <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                                        <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Sign in 
+                                            <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
+                                        </a>
                                         <ul id="signInOutDropdown" class="dropdown-menu" >
                                             <li>
                                                 <div class="row">
@@ -222,21 +224,21 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="img-square" src="${pageContext.request.contextPath}/resources/images/index/most_anticipated.jpg" alt="Hot list of games" width="140" height="140">
+                    <img class="img-square" src="${pageContext.request.contextPath}/resources/images/index/most_anticipated.jpg" alt="Hot list of games" width="200" height="140">
                     <h2>Hot list of games</h2>
                     <p>Click bellow to see the most anticipated and most desired games we selected entirely for you.</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <img class="img-square" src="${pageContext.request.contextPath}/resources/images/index/oculus_rift_sideon_02.jpg" alt="VR section" width="200" height="140">
+                    <h2>VR Section</h2>
+                    <p>Learn more about the new way to enjoy your games with virtual reality.</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <img class="img-square" src="${pageContext.request.contextPath}/resources/images/index/familyGaming.jpg" alt="Interactive games" width="200" height="140">
+                    <h2>Interactive Games</h2>
+                    <p>See the the selection of games we made so you can enjoy your time with family or friends.</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
