@@ -185,34 +185,28 @@
         <!-- Admin features
         ================================================== -->
         <div id="adminWrapper" class="container">
-           
+
             <div class="row">
                 <h1 class="page-header">FooGames system administration</h1>
-                
-                <!-- ===== Button Expand and collapse==== -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="pull-right"> <a id="expandAll" href="#" class="btn btn-default" role="button">Expand All</a>
 
-                        <a id="collapseAll" href="#" class="btn btn-default" role="button">Collapse All</a>
-                    </div>
-                </div>
+               
                 <!--=================================================
                 Start the pannel group for collapse =====================-->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="panel-group" id="accordion">
 
-            <!-- ========================
-            -======== Insert Action and view -->
-            <div class="panel panel-default">
+                        <!-- ========================
+                        -======== Insert Action and view -->
+                        <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
                                         <h2>Insert a product on database</h2>
                                     </a>
-                                </h4>
+                                </div>
 
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
+                            <div id="collapseOne" class="panel-collapse collapse">
                                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                     richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
                                     dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -225,18 +219,14 @@
                             </div>
                         </div>
 
-            <!-- ================================
-            ======== Update and view update=========-->
-            <div id="update" class="container adminItem">
-                <h2>Update a product on database</h2>
+                        <!-- ================================
+                        ======== Update and view update=========-->
 
-            </div>
-            
-            <div class="panel panel-default">
+                        <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="">
-                                        Collapsible Group Item #2
+                                        <h2>Update a product on database</h2>
                                     </a>
                                 </h4>
 
@@ -254,39 +244,13 @@
                             </div>
                         </div>
 
-            <!-- ================================
-           ======== Remove and view remove result=========-->
-            <div id="remove" class="container adminItem">
-                <h2>Remove a product from database</h2>
-
-            </div>
-
-            <!-- ================================
-         ======== Consultations =========-->
-            <div id="consultations" class="container adminItem">
-                <h2>Consultations of products</h2>
-            </div>
-
-
-            <!-- ================================
-           ======== Reports =========-->
-            <div id="reports" class="container adminItem">
-                <h2> Site reports</h2>
-
-            </div>
-
-
-
-
-            
-                
-                        
-                        
+                        <!-- ================================
+                       ======== Remove and view remove result=========-->
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
-                                        Collapsible Group Item #3
+                                        <h2>Remove a product from database</h2>
                                     </a>
                                 </h4>
 
@@ -303,10 +267,60 @@
                                     VHS.</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+                        <!-- ================================
+                     ======== Consultations =========-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="">
+                                        <h2>Consultations of products</h2>
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                    VHS.</div>
+                            </div>
+                        </div>
+
+
+                        <!-- ================================
+                       ======== Reports =========-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="">
+                                        <h2> Site reports</h2>
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                    VHS.</div>
+                            </div>
+                        </div>
+
+                    </div><!--========== End of table ========== -->
+                </div> <!-- ============ End of group table ============= -->
+            </div> <!-- =========== End of rows =========== -->
+        </div> <!-- ============== End of div Wrapper  ============-->
 
 
 
