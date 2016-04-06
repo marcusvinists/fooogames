@@ -212,7 +212,7 @@
                                         <fieldset>
 
                                             <!-- Form Name -->
-                                            <legend>Form Name</legend>
+                                            <legend>Insert a new product</legend>
 
                                             <!-- Text input-->
                                             <div class="form-group">
@@ -253,6 +253,24 @@
                                                 </div>
                                             </div>
 
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertQuantity">Quantity</label>  
+                                                <div class="col-md-4">
+                                                    <input id="insertQuantity" name="insertQuantity" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Textarea -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertDescription">Description</label>
+                                                <div class="col-md-4">                     
+                                                    <textarea class="form-control" id="insertDescription" name="insertDescription"></textarea>
+                                                </div>
+                                            </div>
+
+
                                         </fieldset>
                                     </form>
 
@@ -273,17 +291,75 @@
 
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    VHS.</div>
+                                <div class="panel-body">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+
+                                            <!-- Form Name -->
+                                            <legend>Update product information</legend>
+
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertname">Name</label>  
+                                                <div class="col-md-4">
+                                                    <input id="insertname" name="insertname" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Select Basic -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertcategory">Category</label>
+                                                <div class="col-md-4">
+                                                    <select id="insertcategory" name="insertcategory" class="form-control">
+                                                        <option value="1">Console</option>
+                                                        <option value="2">Game</option>
+                                                        <option value="3">Accessory</option>
+                                                        <option value="4">VR</option>
+                                                        <option value="5">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Select Basic -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertConsole">Plataform</label>
+                                                <div class="col-md-4">
+                                                    <select id="insertConsole" name="insertConsole" class="form-control">
+                                                        <option value="1">Xbox One</option>
+                                                        <option value="2">Playstation 4</option>
+                                                        <option value="3">PC</option>
+                                                        <option value="4">Wii U</option>
+                                                        <option value="5">3DS</option>
+                                                        <option value="6">PS Vita</option>
+                                                        <option value="7">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertQuantity">Quantity</label>  
+                                                <div class="col-md-4">
+                                                    <input id="insertQuantity" name="insertQuantity" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Textarea -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="insertDescription">Description</label>
+                                                <div class="col-md-4">                     
+                                                    <textarea class="form-control" id="insertDescription" name="insertDescription"></textarea>
+                                                </div>
+                                            </div>
+
+
+                                        </fieldset>
+                                    </form>
+                                    
+                                </div>
                             </div>
-                        </div>
 
                         <!-- ================================
                        ======== Remove and view remove result=========-->
