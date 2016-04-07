@@ -282,7 +282,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title" id="myModalLabel"><h2>TERMS AND CONDITIONS OF REGISTRATION</h2></h4>
+                            <h4 class="modal-title" id="myModalLabel"><h2>TERMS AND CONDITIONS</h2></h4>
                         </div>
                         <div class="modal-body">                            
                             <p>Welcome to the registration term of FooGames site and its related services. You may access many areas of our website without registering your details with us. Certain areas are only open to you if you register. This term apply to conditions which govern material submitted by you to us and your use of this website (including all branded microsites and any email bulletins) .</p>

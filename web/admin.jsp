@@ -297,21 +297,34 @@
 
                                             <!-- Form Name -->
                                             <legend>Update product information</legend>
-
+                                            <br>
+                                            <h4> The id of the item you want to update</h4>
+                                            <br>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertname">Name</label>  
+                                                <label class="col-md-4 control-label" for="updateId">Item id</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertname" name="insertname" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="updateId" name="updateId" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <h4> Fields of the item you want to update</h4>
+                                            <br>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="updateName">Name</label>  
+                                                <div class="col-md-4">
+                                                    <input id="insertname" name="updateName" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertcategory">Category</label>
+                                                <label class="col-md-4 control-label" for="updateCategory">Category</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertcategory" name="insertcategory" class="form-control">
+                                                    <select id="insertcategory" name="updateCategory" class="form-control">
                                                         <option value="1">Console</option>
                                                         <option value="2">Game</option>
                                                         <option value="3">Accessory</option>
@@ -323,9 +336,9 @@
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertConsole">Plataform</label>
+                                                <label class="col-md-4 control-label" for="updateConsole">Plataform</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertConsole" name="insertConsole" class="form-control">
+                                                    <select id="insertConsole" name="updateConsole" class="form-control">
                                                         <option value="1">Xbox One</option>
                                                         <option value="2">Playstation 4</option>
                                                         <option value="3">PC</option>
@@ -339,115 +352,117 @@
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertQuantity">Quantity</label>  
+                                                <label class="col-md-4 control-label" for="updateQuantity">Quantity</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertQuantity" name="insertQuantity" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="insertQuantity" name="updateQuantity" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertDescription">Description</label>
+                                                <label class="col-md-4 control-label" for="updateDescription">Description</label>
                                                 <div class="col-md-4">                     
-                                                    <textarea class="form-control" id="insertDescription" name="insertDescription"></textarea>
+                                                    <textarea class="form-control" id="insertDescription" name="updateDescription"></textarea>
                                                 </div>
                                             </div>
 
 
                                         </fieldset>
                                     </form>
-                                    
+
                                 </div>
                             </div>
 
-                        <!-- ================================
-                       ======== Remove and view remove result=========-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
-                                        <h2>Remove a product from database</h2>
-                                    </a>
-                                </h4>
+                            <!-- ================================
+                           ======== Remove and view remove result=========-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                                            <h2>Remove a product from database</h2>
+                                        </a>
+                                    </h4>
 
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+
+
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="removeId">Item id</label>  
+                                                <div class="col-md-4">
+                                                    <input id="removeId" name="removeId" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </form>
+
+                                </div>
                             </div>
-                            <div id="collapseThree" class="panel-collapse collapse">
-                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    VHS.</div>
+
+                            <!-- ================================
+                         ======== Consultations =========-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="">
+                                            <h2>Consultations of products</h2>
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="consultId">Item id</label>  
+                                                <div class="col-md-4">
+                                                    <input id="consultId" name="consultId" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </form>
+
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- ================================
-                     ======== Consultations =========-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="">
-                                        <h2>Consultations of products</h2>
-                                    </a>
-                                </h4>
 
+                            <!-- ================================
+                           ======== Reports =========-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="">
+                                            <h2>Generate site report</h2>
+                                        </a>
+                                    </h4>
+
+                                </div>                                
                             </div>
-                            <div id="collapseFour" class="panel-collapse collapse">
-                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    VHS.</div>
-                            </div>
-                        </div>
 
-
-                        <!-- ================================
-                       ======== Reports =========-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="">
-                                        <h2> Site reports</h2>
-                                    </a>
-                                </h4>
-
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse">
-                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    VHS.</div>
-                            </div>
-                        </div>
-
-                    </div><!--========== End of table ========== -->
-                </div> <!-- ============ End of group table ============= -->
-            </div> <!-- =========== End of rows =========== -->
-        </div> <!-- ============== End of div Wrapper  ============-->
+                        </div><!--========== End of table ========== -->
+                    </div> <!-- ============ End of group table ============= -->
+                </div> <!-- =========== End of rows =========== -->
+            </div> <!-- ============== End of div Wrapper  ============-->
 
 
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+            <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>
