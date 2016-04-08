@@ -59,7 +59,8 @@
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
                                     <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
-                                    <li><a href="#contact">Contato</a></li>
+                                    <li><a href="Contato.jsp">Contato</a></li>
+                                    <li><a href="admin.jsp">Administrador</a></li>
                                 </ul>
                                 <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
@@ -123,8 +124,8 @@
                                             <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#contact">VR</a></li>
-                                    <li><a href="#contact">Coisas Legais</a></li>
+                                    <li><a href="search.jsp">VR</a></li>
+                                    <li><a href="search.jsp">Coisas Legais</a></li>
                                 </ul>                            
 
                                 <!--  ====================================== 

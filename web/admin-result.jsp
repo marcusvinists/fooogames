@@ -56,6 +56,7 @@
                                 <ul class="nav navbar-nav">
                                     <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
                                     <li><a href="#contact">Contato</a></li>
+                                     <li><a href="admin.jsp">Administrador</a></li>
                                 </ul>
                                 <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">

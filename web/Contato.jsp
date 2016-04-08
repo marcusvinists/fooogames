@@ -58,8 +58,9 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/">Quem Somos</a></li>
-                                    <li><a href="${pageContext.request.contextPath}/Contato.jsp">Fale Conosco</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/Contato.jsp">Contato</a></li>
+                                     <li><a href="admin.jsp">Administrador</a></li>
                                 </ul>
                                 <form class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
@@ -140,8 +141,8 @@
                                             <li><a href="#">One more separated link</a></li>-->
                                         </ul>
                                     </li>
-                                    <li><a href="#contact">VR</a></li>
-                                    <li><a href="#contact">Cool Stuff</a></li>
+                                    <li><a href="search.jsp">VR</a></li>
+                                    <li><a href="search.jsp">Cool Stuff</a></li>
                                 </ul>                    
 
                                <!--  ====================================== 
