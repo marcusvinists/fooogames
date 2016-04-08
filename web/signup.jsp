@@ -1,3 +1,8 @@
+<%-- 
+    Document   : Index
+    Updated on : 08/04/2016, 08:30
+    Author     : Felipe
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -122,7 +127,7 @@
                                     <li><a href="#contact">Coisas Legais</a></li>
                                 </ul>                            
 
-                                <!--  ====================================== 
+                               <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>

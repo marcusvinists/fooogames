@@ -1,3 +1,10 @@
+<%-- 
+    Document   : Index
+    Updated on : 08/04/2016, 08:30
+    Author     : Felipe
+--%>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,6 +15,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
+        
 
         <title>Foogames</title>
 
