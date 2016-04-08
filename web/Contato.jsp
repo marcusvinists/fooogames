@@ -29,7 +29,7 @@
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
         <script src="js/validator.min.js"></script>
-        <script src="js/Mascaras.js"></script>
+        
         
 
 
@@ -250,10 +250,8 @@
        
      </div>  -->
     
-    
-   <script src="js/Mascaras.js">
-       
-   </script>
+<script type='text/javascript' src="/resources/js/Mascaras.js"></script>
+  
    
     <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
@@ -278,8 +276,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="number" name="telefone" id="telefone" class="form-control input-lg" placeholder="(11)1111 1111" tabindex="3" required 
-                                   onKeyPress="MascaraTelefone(form1.tel);" maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
+                            <input type="text" name="telefone" id="telefone" class="form-control input-lg" placeholder="(11)1111 1111" tabindex="3" required 
+                                   onKeyPress="MascaraTelefone(form1.telefone);" maxlength="14"  onBlur="ValidaTelefone(form1.telefone);">
                              <!-- No campo Nome foi colocado apenas um atributo required. Isso é padrão do HTML5 e a lib
                                     usa automaticamente para formatar o visual de erro.-->
                         </div>
