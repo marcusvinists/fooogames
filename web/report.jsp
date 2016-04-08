@@ -53,7 +53,7 @@
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
-                                <form class="navbar-form navbar-right" id="search">
+                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
                                 </form>
 

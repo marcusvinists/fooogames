@@ -52,8 +52,9 @@
                                 <ul class="nav navbar-nav">
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
+                                    <li><a href="admin.jsp">Administrator</a></li>
                                 </ul>
-                                <form class="navbar-form navbar-right" id="search">
+                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
                                 </form>
 
@@ -134,7 +135,8 @@
                                     </li>
                                     <li><a href="#contact">VR</a></li>
                                     <li><a href="#contact">Cool Stuff</a></li>
-                                </ul>                            
+                                </ul>
+                               
 
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->

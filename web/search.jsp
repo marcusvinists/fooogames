@@ -1,6 +1,3 @@
-
-<%@page import="java.util.Random"%>
-<%@page import="java.text.ParseException"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,17 +19,17 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/admin-result.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/signup.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
 
     </head>
 
-    
+    <body>
         <!-- NAVBAR
    ================================================== -->
-    <body>
+
         <div id="navbarFloater">
             <div class="navbar-wrapper">
                 <div id="bigNavbarContainer" class="container">
@@ -184,85 +181,36 @@
             </div>
         </div>
                                         
-                                         <!-- Start of admin result
-           ================================================== -->
-       <div id="adminWrapper" class="container">
-         <%
-             String operation = request.getParameter("op");
-             String id = request.getParameter("id");
-             String name = request.getParameter("name");
-                 String category = request.getParameter("category");
-                 String plataform = request.getParameter("plataform");
-                 String quantity = request.getParameter("quantity");
-                 String description = request.getParameter("description");
-                 
-                 Random rand = new Random();
-                  int randomNum = rand.nextInt((100 - 1) + 1) + 1;
-             
-             if(operation.equalsIgnoreCase("add")){
-                 
-                 
-                 
-         %>        
-         <div class="adminItem">
-            <h2>Item added</h2>   
-            <ul class="list-group">
-                <li class="list-group-item">Id item: <%out.println(randomNum);%></li>
-                <li class="list-group-item">Name: <%out.println(name);%></li>
-                <li class="list-group-item">Category: <%out.println(category);%></li>
-                <li class="list-group-item">Plataform: <%out.println(plataform);%></li>
-                <li class="list-group-item">Quantity: <%out.println(quantity);%></li>
-                <li class="list-group-item">Description: <%out.println(description);%></li>
-              </ul>  
-         </div>
-         
-         <%    }else if(operation.equalsIgnoreCase("remove")){
-         %>
-           <div class="adminItem">
-            <h2>Item removed</h2>   
-            <ul class="list-group">
-                <li class="list-group-item">Id item: <%out.println(id);%></li>
-                <li class="list-group-item">Name: <%out.println("Nome do item");%></li>
-                <li class="list-group-item">Category: <%out.println("Categoria");%></li>
-                <li class="list-group-item">Plataform: <%out.println("Praysteixio 4");%></li>
-                <li class="list-group-item">Quantity: <%out.println("999");%></li>
-                <li class="list-group-item">Description: <%out.println("Po deletou o prei");%></li>
-              </ul>  
-         </div>        
-         
-         <%   }else if(operation.equalsIgnoreCase("alter")){
-          %>       
-             <h2>Item altered</h2>   
-            <ul class="list-group">
-                <li class="list-group-item">Id item: <%out.println(id);%></li>
-                <li class="list-group-item">Name: <%out.println(name);%></li>
-                <li class="list-group-item">Category: <%out.println(category);%></li>
-                <li class="list-group-item">platform <%out.println(plataform);%></li>
-                <li class="list-group-item">Quantity: <%out.println(quantity);%></li>
-                <li class="list-group-item">Description: <%out.println(description);%></li>
-              </ul>  
-         </div>  
-          <% }else if(operation.equalsIgnoreCase("consult")){
-           %>      
-             <h2>Consulta do Item</h2>   
-            <ul class="list-group">
-                <li class="list-group-item">Id item: <%out.println(id);%></li>
-                <li class="list-group-item">Name: <%out.println("Nome do item");%></li>
-                <li class="list-group-item">Category: <%out.println("Categoria");%></li>
-                <li class="list-group-item">Plataform: <%out.println("Praysteixio 4");%></li>
-                <li class="list-group-item">Quantity: <%out.println("999");%></li>
-                <li class="list-group-item">Description: <%out.println("Video game legal :D");%></li>
-              </ul>  
-         </div>  
-           <%}else{
-                 out.println("Operation not supported");
-             }%>
-         
+                                        
+                                        
+        <!-- =========================================================
+        search   ======================================= -->
+        <div class="container">
 
+            <hgroup class="mb20">
+                <h1>Resultados da busca:</h1>
+                <h2 class="lead"><strong class="text-danger">1</strong> results were found for the search for <strong class="text-danger">Tom Clancy's The Division</strong></h2>								
+            </hgroup>
+
+            <section class="col-xs-12 col-sm-6 col-md-12">
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <img src="http://www.gamestop.com/common/images/sbox/102034a.jpg" alt="Lorem ipsum" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+                        <h3>Tom Clancy's The Division for PC</h3>
+                        <p>The Division, uma unidade de agentes táticos, levam uma vida aparentemente normal entre nós, eles são treinados para operar independentemente do comando. Lutando para evitar a queda da sociedade, os agentes vão se encontrar presos em uma conspiração épica..</p>						
+                    </div>
+                    <span class="clearfix borda"></span>
+                </article>	
+
+            </section>
         </div>
-        
-        <!-- End of admin result
-           ================================================== -->
+
+
+
 
 
         <!-- Bootstrap core JavaScript
@@ -275,5 +223,5 @@
         <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
         <!-- Custom js for this page -->
         <script src="${pageContext.request.contextPath}/resources/js/signup.js"></script>
-    
+    </body>
 </html>
