@@ -257,8 +257,8 @@
    
     <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form role="form" data-toggle="validator">
-                        <h2>Por favor, preencha este formulário para que um dos nossos funcionários
+                    <form id="form1" role="form" data-toggle="validator">
+                        <h2>Por favor, preencha este formulário com seus dados para que um dos nossos funcionários
                             entre em contato com você.</h2>
                         <hr class="colorgraph">
                         <div class="row">
