@@ -29,9 +29,10 @@
 
     </head>
 
-    <!-- NAVBAR
-    ================================================== -->
     <body>
+        <!-- NAVBAR
+   ================================================== -->
+    
         <div id="navbarFloater">
             <div class="navbar-wrapper">
                 <div id="bigNavbarContainer" class="container">
@@ -55,7 +56,7 @@
                                     <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
                                     <li><a href="#contact">Contato</a></li>
                                 </ul>
-                                <form class="navbar-form navbar-right" id="search">
+                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
                                 </form>
 

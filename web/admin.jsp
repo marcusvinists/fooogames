@@ -53,7 +53,7 @@
                                     <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
                                     <li><a href="#contact">Contato</a></li>
                                 </ul>
-                                <form class="navbar-form navbar-right" id="search">
+                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
                                 </form>
 
@@ -286,7 +286,7 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <form class="form-horizontal">
+                                    <form action="admin-result.jsp" class="form-horizontal" method="post">
                                         <!-- invisible so post know what we're doing-->
                                             <input name='op' type="text"  value="alter" hidden="">
                                         <fieldset>
@@ -391,7 +391,7 @@
 
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
-                                    <form class="form-horizontal">
+                                    <form action="admin-result.jsp" class="form-horizontal" method="post">
                                         <!-- invisible so post know what we're doing-->
                                             <input name='op' type="text"  value="remove" hidden="">
                                         <fieldset>
@@ -432,7 +432,7 @@
 
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
-                                    <form class="form-horizontal">
+                                    <form action="admin-result.jsp" class="form-horizontal" method="post">
                                         <!-- invisible so post know what we're doing-->
                                             <input name='op' type="text"  value="consult" hidden="">
                                         <fieldset>
