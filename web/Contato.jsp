@@ -1,12 +1,11 @@
 <%-- 
-    Document   : Index
-    Updated on : 08/04/2016, 08:30
+    Document   : Contato
+    Created on : 07/04/2016, 09:24:24
     Author     : Felipe
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,7 @@
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
 
-        <title>Foogames Cadastro</title>
+        <title>Foogames Contato</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,17 +24,20 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/signup.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
+        <script src="js/validator.min.js"></script>
+        <script src="js/Mascaras.js"></script>
+        
+
 
     </head>
 
+      <!-- NAVBAR
+    ================================================== -->
     <body>
-        <!-- NAVBAR
-   ================================================== -->
-    
         <div id="navbarFloater">
             <div class="navbar-wrapper">
                 <div id="bigNavbarContainer" class="container">
@@ -59,7 +61,7 @@
                                     <li><a href="${pageContext.request.contextPath}/">Quem Somos</a></li>
                                     <li><a href="${pageContext.request.contextPath}/Contato.jsp">Fale Conosco</a></li>
                                 </ul>
-                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
+                                <form class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
                                 </form>
 
@@ -156,7 +158,7 @@
                                                     <div class="col-md-12">
                                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">EndereÃ§o de Email</label>
+                                                                <label class="sr-only" for="exampleInputEmail2">Endereço de Email</label>
                                                                 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
                                                             </div>
                                                             <div class="form-group">
@@ -186,176 +188,138 @@
                 </div>
             </div>
         </div>
+        
+   <!-- <div id="containerDados" class="container">    
+      <div class="col-md-6"> 
+  
+            <h1>Contatos Foogames</h1>
+            <h3>Telefone: 11 1111 1111</h3>
+            <h3>Email: contato@foogames.com.br</h3>                         
+       </div>
+                                  
+       <aside role="complementary" class="col-md-3">
+       <div class="form-group">   
+       <fieldset class="formFieldset" form="resp">
+        <ol class="formContiner" id="rsform_1_page_0">
+	<li class="rsform-block rsform-block-eusou">
+		<div class="formCaption2">Eu sou</div>
+		<div class="formBody"><select  name="form[eusou][]"  id="eusou"  class="rsform-select-box" >
+                        <option selected="selected" value="">Selecione uma op&ccedil;&atilde;o</option>
+                        <option  value="Lojista">Lojista</option><option  value="Consumidor">Consumidor</option>
+                        <option  value="Fornecedor">Fornecedor</option><option  value="Outro">Outro</option>
+                        </select><span class="formClr">
+                        </span></div>
+		<div class="formDescription"></div>
+	</li> 
+        <li class="rsform-block rsform-block-falarCom">
+		<div class="formCaption2">Desejo Falar com</div>
+		<div class="formBody"><select  name="form[eusou][]"  id="falarCom"  class="rsform-select-box" >
+                        <option selected="selected" value="">Selecione uma op&ccedil;&atilde;o</option>
+                        <option  value="Financeiro">Financeiro</option><option  value="Comercial">Comercial</option>
+                        <option  value="Suporte">Suporte</option><option  value="Outro">Outro</option>
+                        </select><span class="formClr">
+                        </span></div>
+		<div class="formDescription"></div>
+	</li>    
+          <li class="rsform-block rsform-block-Nome">
+		<div class="formCaption2">Nome</div>
+                <input type="text" size="50">
+	</li>
+        
+        </li>    
+          <li class="rsform-block rsform-block-Assunto">
+		<div class="formCaption2">Assunto</div>
+                <input type="text" size="50">
+	</li>
+        
+        </li>    
+        <li class="rsform-block rsform-block-Mensagem">
+		<div class="formCaption2">Mensagem</div>
+                <textarea type="text" cols="50" rows="5"></textarea>
+	</li>
+        <input type="button" name="submit" value="Enviar">
+        <input type="button" name="reset" value="Limpar">
+        </fieldset>
 
-        <!-- start of signup
-           ================================================== -->
-        <div class="container">
-
-            <div class="row">
+        </ol>       
+       
+       </div>
+        </aside>
+ 
+       
+       
+     </div>  -->
+    
+    
+   <script src="js/Mascaras.js">
+       
+   </script>
+   
+    <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form role="form">
-                        <h2>Por Favor, cadastre-se <small>Foogames.</small></h2>
+                    <form id="form1" role="form" data-toggle="validator">
+                        <h2>Por favor, preencha este formulário com seus dados para que um dos nossos funcionários
+                            entre em contato com você.</h2>
                         <hr class="colorgraph">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nome" tabindex="1">
+                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nome" tabindex="1" required>
+                                    <!-- No campo Nome foi colocado apenas um atributo required. Isso é padrão do HTML5 e a lib
+                                    usa automaticamente para formatar o visual de erro.-->
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Sobrenome" tabindex="2">
+                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Sobrenome" tabindex="2" required>
+                                     <!-- No campo Nome foi colocado apenas um atributo required. Isso é padrão do HTML5 e a lib
+                                    usa automaticamente para formatar o visual de erro.-->
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Nome de UsuÃ¡rio" tabindex="3">
+                            <input type="number" name="telefone" id="telefone" class="form-control input-lg" placeholder="(11)1111 1111" tabindex="3" required 
+                                   onKeyPress="MascaraTelefone(form1.tel);" maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
+                             <!-- No campo Nome foi colocado apenas um atributo required. Isso é padrão do HTML5 e a lib
+                                    usa automaticamente para formatar o visual de erro.-->
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="EndereÃ§o de Email" tabindex="4">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Digite seu email..." tabindex="4" data-error="Por favor, informe um endereço de email." required>
                         </div>
-                        <div class="row">
+                        <div class="form-group">
+                            <input type="text" name="assunto" id="assunto" class="form-control input-lg" placeholder="assunto" tabindex="4">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" name="Mensagem" id="mensagem" class="form-control input-lg" placeholder="Digite sua mensagem..." tabindex="4"></textarea>
+                        </div>
+                        <div class="row">                            
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+                                    <div class="col-xs-12 col-md-6">
+                                        <input type="submit" value="Enviar" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirma Senha" tabindex="6">
-                                </div>
-                            </div>
+                            
                         </div>
-                        <div class="row">
-                            <div class="col-xs-4 col-sm-3 col-md-3">
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info" tabindex="7">Concordo</button>
-                                    <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
-                                </span>
-                            </div>
-                            <div class="col-xs-8 col-sm-9 col-md-9">
-                                Ao Clicar <strong class="label label-primary">Registrar</strong>, vocÃª estarÃ¡ concordando com os <a href="#" data-toggle="modal" data-target="#t_and_c_m">Termos e CondiÃ§Ãµes</a> deste site, incluindo a sua politica de cookies.
-                            </div>
-                        </div>
-
-                        <hr class="colorgraph">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6"><input type="submit" value="Registrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
-                        </div>
-                    </form>
+                        
+                             <h2>
+                                 Atenciosamente,<br>
+                                 <small>Equipe FooGames</small></h2>
+                            </form>
                 </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
-                            <h4 class="modal-title" id="myModalLabel"><h2>TERMS AND CONDITIONS</h2></h4>
-                        </div>
-                        <div class="modal-body">                            
-                            <p>Welcome to the registration term of FooGames site and its related services. You may access many areas of our website without registering your details with us. Certain areas are only open to you if you register. This term apply to conditions which govern material submitted by you to us and your use of this website (including all branded microsites and any email bulletins) .</p>
-                            <ul>
-                                <li>
-                                    <span class="index">1.</span>
-                                    Registration
-                                    <ul>
-                                        <li>
-                                            <span class="index">1.1</span>
-                                            By registering here and creating your profile, you can access different services that are offered by us without having to register for each service separately. If a service you wish to subscribe to has additional terms and conditions, you will be asked to accept these separately.
-                                        </li>
-                                        <li>
-                                            <span class="index">1.2</span>
-                                            You agree that:
-                                            <ul>
-                                                <li>
-                                                    <span class="index">(1)</span>
-                                                    you will keep your username and password safe, and won't share them with anyone.
-                                                </li>
-                                                <li>
-                                                    <span class="index">(2)</span>
-                                                    you will not pass yourself off as someone else or create multiple, false accounts.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="index">2.</span>
-                                    Term
-                                    <ul>
-                                        <li>
-                                            <span class="index">2.1</span>
-                                            If you breach these or any of our other terms and conditions we reserve the right to close your account, if we do so, we may close all accounts you have open in your name.
-                                        </li>
-                                        <li>
-                                            <span class="index">2.2</span>
-                                            To deactivate your account please contact our customer services department; their details can be found under "contact us" on our home page.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="index">3.</span>
-                                    Administration
-                                    <ul>
-                                        <li>
-                                            <span class="index">3.1</span>
-                                            You can update your personal details (including your account and marketing preferences) by accessing your account at your Profile page and making any necessary changes; this will update your details across all services that you have subscribed to.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="index">4.</span>
-                                    Data
-                                    <ul>
-                                        <li>
-                                            <span class="index">4.1</span>
-                                            You agree that all data by you submitted is licensed to use by Foogames and it's branches. 
-                                            By using our site you agree with our cookies policy.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="index">5.</span>
-                                    General
-                                    <ul>
-                                        <li>
-                                            <span class="index">5.1</span>
-                                            No waiver by us of any breach of these terms shall constitute a waiver of any other prior or subsequent breach and we shall not be affected by any delay, failure or omission to enforce or express forbearance granted in respect of any of your obligations.
-                                        </li>
-                                        <li>
-                                            <span class="index">5.2</span>
-                                            The rights and remedies of is under these terms are independent, cumulative and without prejudice to its rights under the law.
-                                        </li>
-                                        <li>
-                                            <span class="index">5.3</span>
-                                            These terms are not intended to create and shall not create any rights, entitlements, claims or benefits enforceable by any third party by virtue of the Contracts (Rights of Third Parties) Act 1999.
-                                        </li>
-                                        <li>
-                                            <span class="index">5.4</span>
-                                            These terms and/or your use of the website shall be governed by and construed in accordance with English law and the English Courts shall have exclusive jurisdiction over any dispute which may arise.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>  
-                        </div>                       
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-        </div>
-        <!-- End of signup
-           ================================================== -->
+                     
+                </div>
+      
 
-
-        <!-- Bootstrap core JavaScript
-           ================================================== -->
+         
+     <!-- Bootstrap core JavaScript
+        ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-        <!-- Custom js for this page -->
-        <script src="${pageContext.request.contextPath}/resources/js/signup.js"></script>
     </body>
-</html>
+ </html>
