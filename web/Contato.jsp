@@ -187,22 +187,19 @@
             </div>
         </div>
         
-                                                                              
-  <table width=auto height=auto>   
-     <tr>
-        <td><!-- Container de contatos da Empresa-->
-        <div id="containerDados" class="container form">   
+        
+  <div id="containerDados" class="container">    
+      <div class="col-md-6"> 
+  
             <h1>Contatos Foogames</h1>
             <h3>Telefone: 11 1111 1111</h3>
-            <h3>Email: contato@foogames.com.br</h3>
-        </div>                         
-                    
-                                            
-       
-       <td>
-       <div id="containerDados" class="container form" >
+            <h3>Email: contato@foogames.com.br</h3>                         
+       </div>
+                                  
+       <aside role="complementary" class="col-md-3">
+           
        <fieldset class="formFieldset" form="resp">
-        <ol class="formContainer" id="rsform_1_page_0">
+        <ol class="formContiner" id="rsform_1_page_0">
 	<li class="rsform-block rsform-block-eusou">
 		<div class="formCaption2">Eu sou</div>
 		<div class="formBody"><select  name="form[eusou][]"  id="eusou"  class="rsform-select-box" >
@@ -245,11 +242,14 @@
 
         </ol>       
        
-       </div>
 
-         </td>
-     </tr></table>
+        </aside>
+ 
        
+       
+     </div>
+
+         
      <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
