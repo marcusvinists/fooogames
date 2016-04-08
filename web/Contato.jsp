@@ -186,13 +186,22 @@
                 </div>
             </div>
         </div>
-                                        
-         
-        <!-- Container dados Contato     -->                                
-        <div id="containerDados" class="container form" >
-            <fieldset class="formFieldset" form="resp">
-                                        
-                                        
+        
+                                                                              
+  <table width=auto height=auto>   
+     <tr>
+        <td><!-- Container de contatos da Empresa-->
+        <div id="containerDados" class="container form">   
+            <h1>Contatos Foogames</h1>
+            <h3>Telefone: 11 1111 1111</h3>
+            <h3>Email: contato@foogames.com.br</h3>
+        </div>                         
+                    
+                                            
+       
+       <td>
+       <div id="containerDados" class="container form" >
+       <fieldset class="formFieldset" form="resp">
         <ol class="formContainer" id="rsform_1_page_0">
 	<li class="rsform-block rsform-block-eusou">
 		<div class="formCaption2">Eu sou</div>
@@ -232,10 +241,15 @@
 	</li>
         <input type="button" name="submit" value="Enviar">
         <input type="button" name="reset" value="Limpar">
-        
-        </ol>          
-        </fieldset>  
-        </div>
+        </fieldset>
+
+        </ol>       
+       
+       </div>
+
+         </td>
+     </tr></table>
+       
      <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
