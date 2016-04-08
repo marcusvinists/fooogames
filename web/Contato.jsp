@@ -187,7 +187,7 @@
             </div>
         </div>
         
-  <div id="containerDados" class="container">    
+   <!-- <div id="containerDados" class="container">    
       <div class="col-md-6"> 
   
             <h1>Contatos Foogames</h1>
@@ -196,7 +196,7 @@
        </div>
                                   
        <aside role="complementary" class="col-md-3">
-           
+       <div class="form-group">   
        <fieldset class="formFieldset" form="resp">
         <ol class="formContiner" id="rsform_1_page_0">
 	<li class="rsform-block rsform-block-eusou">
@@ -241,12 +241,62 @@
 
         </ol>       
        
-
+       </div>
         </aside>
  
        
        
-     </div>
+     </div>  -->
+   
+    <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form role="form">
+                        <h2>Por favor, preencha este formulário para que um dos nossos funcionários
+                            entre em contato com você.</h2>
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nome" tabindex="1">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Sobrenome" tabindex="2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="telefone" id="telefone" class="form-control input-lg" placeholder="(DD)1111 1111" tabindex="3">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="assunto" id="assunto" class="form-control input-lg" placeholder="assunto" tabindex="4">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" name="Mensagem" id="mensagem" class="form-control input-lg" placeholder="Digite sua mensagem..." tabindex="4"></textarea>
+                        </div>
+                        <div class="row">                            
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-md-6">
+                                        <input type="submit" value="Enviar" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                             <h2>
+                                 Atenciosamente,<br>
+                                 <small>Equipe FooGames</small></h2>
+                            </form>
+                </div>
+                     
+                </div>
+      
 
          
      <!-- Bootstrap core JavaScript
