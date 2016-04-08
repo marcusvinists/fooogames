@@ -208,26 +208,28 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <form class="form-horizontal">
+                                    <form action="admin-result.jsp" class="form-horizontal" method="post">
                                         <fieldset>
 
                                             <!-- Form Name -->
                                             <legend>Insert a new product</legend>
 
+                                            <!-- invisible so post know what we're doing-->
+                                            <input name='op' type="text"  value="add" hidden="">
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertname">Name</label>  
+                                                <label class="col-md-4 control-label" for="name">Name</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertname" name="insertname" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="insertname" name="name" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertcategory">Category</label>
+                                                <label class="col-md-4 control-label" for="category">Category</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertcategory" name="insertcategory" class="form-control">
+                                                    <select id="insertcategory" name="category" class="form-control">
                                                         <option value="1">Console</option>
                                                         <option value="2">Game</option>
                                                         <option value="3">Accessory</option>
@@ -239,9 +241,9 @@
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertConsole">Plataform</label>
+                                                <label class="col-md-4 control-label" for="plataform">Platform</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertConsole" name="insertConsole" class="form-control">
+                                                    <select id="insertConsole" name="plataform" class="form-control">
                                                         <option value="1">Xbox One</option>
                                                         <option value="2">Playstation 4</option>
                                                         <option value="3">PC</option>
@@ -255,23 +257,31 @@
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertQuantity">Quantity</label>  
+                                                <label class="col-md-4 control-label" for="quantity">Quantity</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertQuantity" name="insertQuantity" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="insertQuantity" name="quantity" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="insertDescription">Description</label>
+                                                <label class="col-md-4 control-label" for="description">Description</label>
                                                 <div class="col-md-4">                     
-                                                    <textarea class="form-control" id="insertDescription" name="insertDescription"></textarea>
+                                                    <textarea class="form-control" id="insertDescription" name="description"></textarea>
                                                 </div>
                                             </div>
 
 
                                         </fieldset>
+                                        
+                                        <!-- Button -->
+                                        <div class="form-group">
+                                          <label class="col-md-4 control-label" for="submit"></label>
+                                          <div class="col-md-4">
+                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                          </div>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -293,6 +303,8 @@
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <form class="form-horizontal">
+                                        <!-- invisible so post know what we're doing-->
+                                            <input name='op' type="text"  value="alter" hidden="">
                                         <fieldset>
 
                                             <!-- Form Name -->
@@ -302,9 +314,9 @@
                                             <br>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateId">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">Item id</label>  
                                                 <div class="col-md-4">
-                                                    <input id="updateId" name="updateId" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="updateId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
@@ -313,18 +325,18 @@
                                             <br>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateName">Name</label>  
+                                                <label class="col-md-4 control-label" for="name">Name</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertname" name="updateName" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="insertname" name="name" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateCategory">Category</label>
+                                                <label class="col-md-4 control-label" for="category">Category</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertcategory" name="updateCategory" class="form-control">
+                                                    <select id="insertcategory" name="category" class="form-control">
                                                         <option value="1">Console</option>
                                                         <option value="2">Game</option>
                                                         <option value="3">Accessory</option>
@@ -336,9 +348,9 @@
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateConsole">Plataform</label>
+                                                <label class="col-md-4 control-label" for="plataform">Platform</label>
                                                 <div class="col-md-4">
-                                                    <select id="insertConsole" name="updateConsole" class="form-control">
+                                                    <select id="insertConsole" name="plataform" class="form-control">
                                                         <option value="1">Xbox One</option>
                                                         <option value="2">Playstation 4</option>
                                                         <option value="3">PC</option>
@@ -352,23 +364,32 @@
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateQuantity">Quantity</label>  
+                                                <label class="col-md-4 control-label" for="quantity">Quantity</label>  
                                                 <div class="col-md-4">
-                                                    <input id="insertQuantity" name="updateQuantity" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="insertQuantity" name="quantity" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="updateDescription">Description</label>
+                                                <label class="col-md-4 control-label" for="description">Description</label>
                                                 <div class="col-md-4">                     
-                                                    <textarea class="form-control" id="insertDescription" name="updateDescription"></textarea>
+                                                    <textarea class="form-control" id="insertDescription" name="description"></textarea>
                                                 </div>
                                             </div>
 
 
                                         </fieldset>
+                                        
+                                        <!-- Button -->
+                                        <div class="form-group">
+                                          <label class="col-md-4 control-label" for="submit"></label>
+                                          <div class="col-md-4">
+                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                          </div>
+                                        </div>
+                                   
                                     </form>
 
                                 </div>
@@ -387,19 +408,29 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <form class="form-horizontal">
+                                        <!-- invisible so post know what we're doing-->
+                                            <input name='op' type="text"  value="remove" hidden="">
                                         <fieldset>
 
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="removeId">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">Item id</label>  
                                                 <div class="col-md-4">
-                                                    <input id="removeId" name="removeId" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="removeId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                         </fieldset>
+                                        
+                                        <!-- Button -->
+                                        <div class="form-group">
+                                          <label class="col-md-4 control-label" for="submit"></label>
+                                          <div class="col-md-4">
+                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                          </div>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -418,18 +449,28 @@
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <form class="form-horizontal">
+                                        <!-- invisible so post know what we're doing-->
+                                            <input name='op' type="text"  value="consult" hidden="">
                                         <fieldset>
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="consultId">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">Item id</label>  
                                                 <div class="col-md-4">
-                                                    <input id="consultId" name="consultId" type="text" placeholder="" class="form-control input-md" required="">
+                                                    <input id="consultId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
 
                                         </fieldset>
+                                        
+                                        <!-- Button -->
+                                        <div class="form-group">
+                                          <label class="col-md-4 control-label" for="submit"></label>
+                                          <div class="col-md-4">
+                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                          </div>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -441,7 +482,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="">
+                                        <a  href="report.jsp" class="">
                                             <h2>Generate site report</h2>
                                         </a>
                                     </h4>

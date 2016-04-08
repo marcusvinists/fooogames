@@ -14,6 +14,15 @@ body{
 #adminWrapper{
     width: 60%;
     margin: auto;
+ 
+}
+
+.adminItem{
+    
+    border: 2px solid darkslategrey;
+    border-radius: 4px;
+    width: 100%;
+    clear: both;
 }
 
 h2{
