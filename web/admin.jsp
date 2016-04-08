@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
 
-        <title>Foogames Home</title>
+        <title>Foogames</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/admin.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
@@ -50,8 +50,8 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
+                                    <li><a href="#contact">Contato</a></li>
                                 </ul>
                                 <form class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
@@ -63,85 +63,68 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">VR</a></li>
-                                    <li><a href="#contact">Cool Stuff</a></li>
+                                    <li><a href="#contact">Coisas Legais</a></li>
                                 </ul>                            
 
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Sign Up</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in 
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
                                         </a>
                                         <ul id="signInOutDropdown" class="dropdown-menu" >
@@ -150,20 +133,20 @@
                                                     <div class="col-md-12">
                                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                                <label class="sr-only" for="exampleInputEmail2">Endereço de e-mail</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de e-mail" required>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                                <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
                                                             </div>
                                                             <div class="checkbox">
                                                                 <label>
-                                                                    <input type="checkbox"> Remember me
+                                                                    <input type="checkbox"> Lembrar Senha
                                                                 </label>
                                                             </div>
                                                             <div class="form-group">
-                                                                <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                                                <button type="submit" class="btn btn-success btn-block">Entrar</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -180,6 +163,7 @@
                 </div>
             </div>
         </div>
+
 
 
         <!-- Admin features

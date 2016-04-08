@@ -1,7 +1,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
 
-        <title>Foogames Home</title>
+        <title>Foogames</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,16 +20,17 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/signup.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
 
+
+
     </head>
 
-    <body>
-        <!-- NAVBAR
-   ================================================== -->
+    <!-- NAVBAR
+    ================================================== -->
     <body>
         <div id="navbarFloater">
             <div class="navbar-wrapper">
@@ -51,8 +52,8 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
+                                    <li><a href="#contact">Contato</a></li>
                                 </ul>
                                 <form class="navbar-form navbar-right" id="search">
                                     <input type="text" class="form-control" placeholder="Search..." id="searchInput">
@@ -64,85 +65,68 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="search.jsp">Ação</a></li>
+                                            <li><a href="search.jsp">Aventura</a></li>
+                                            <li><a href="search.jsp">Corrida</a></li>
+                                            <li><a href="search.jsp">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">VR</a></li>
-                                    <li><a href="#contact">Cool Stuff</a></li>
+                                    <li><a href="#contact">Coisas Legais</a></li>
                                 </ul>                            
 
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Sign Up</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in 
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
                                         </a>
                                         <ul id="signInOutDropdown" class="dropdown-menu" >
@@ -151,20 +135,20 @@
                                                     <div class="col-md-12">
                                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                                <label class="sr-only" for="exampleInputEmail2">Endereço de e-mail</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de e-mail" required>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                                <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
                                                             </div>
                                                             <div class="checkbox">
                                                                 <label>
-                                                                    <input type="checkbox"> Remember me
+                                                                    <input type="checkbox"> Lembrar Senha
                                                                 </label>
                                                             </div>
                                                             <div class="form-group">
-                                                                <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                                                <button type="submit" class="btn btn-success btn-block">Entrar</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -189,53 +173,53 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                     <form role="form">
-                        <h2>Please Sign Up <small>Foogames.</small></h2>
+                        <h2>Cadastre-se <small>Foogames.</small></h2>
                         <hr class="colorgraph">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Primeiro nome" tabindex="1">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Último nome" tabindex="2">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Apelido" tabindex="3">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de e-mail" tabindex="4">
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmação de senha" tabindex="6">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-4 col-sm-3 col-md-3">
                                 <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
+                                    <button type="button" class="btn" data-color="info" tabindex="7"> Eu concordo</button>
                                     <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
                                 </span>
                             </div>
                             <div class="col-xs-8 col-sm-9 col-md-9">
-                                By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                                Ao clicar em <strong class="label label-primary">Registrar</strong>, você concorda com os <a href="#" data-toggle="modal" data-target="#t_and_c_m">Termos e Condições</a> definidos pelo site, incluindo o uso de Cookies.
                             </div>
                         </div>
 
                         <hr class="colorgraph">
                         <div class="row">
-                            <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                            <div class="col-xs-12 col-md-6"><input type="submit" value="Registrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
                         </div>
                     </form>
                 </div>
