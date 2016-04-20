@@ -1,9 +1,3 @@
-<%-- 
-    Document   : carrinho
-    Created on : 07/04/2016, 18:49:36
-    Author     : Felipe
---%>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>

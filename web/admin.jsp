@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
 
-        <title>Foogames</title>
+        <title>Foogames administrador</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/admin.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
