@@ -8,9 +8,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
-        
 
-        <title>Foogames</title>
+
+        <title>Foogames orders</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/vr.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/order-history.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
@@ -166,9 +166,65 @@
             </div>
         </div>
 
-        <!-- VR
+        <!-- Order History
         ================================================== -->
-       
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product Name</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="http://www.mirchu.net/mobiles/apple-iphone-6/" target="_blank">Apple iphone 6</a></td>
+                                <td>Waqas Hussain</td>
+                                <td>example@mirchu.net</td>
+                                <td>11/6/2014</td>
+                                <td>$899.00</td>
+                                <td><span class="label label-info">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="http://www.mirchu.net/mobiles/lg-g3/" target="_blank">LG G3</a></td>
+                                <td>Basit Raza</td>
+                                <td>example@bugpluss.com</td>
+                                <td>10/6/2014</td>
+                                <td>$621.00</td>
+                                <td><span class="label label-success">Shipped</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="http://www.mirchu.net/mobiles/samsung-galaxy-s5/" target="_blank">Samsung Galaxy S5</a></td>
+                                <td>Raza Ahmed</td>
+                                <td>example@therazz.net</td>
+                                <td>11/9/2013</td>
+                                <td>$640.00</td>
+                                <td><span class="label label-info">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="http://www.mirchu.net/rook-bootstrap-app-landing-page/" target="_blank">Rook Landing Page</a></td>
+                                <td>Mirchu net</td>
+                                <td>example@mirchu.net</td>
+                                <td>11/6/2014</td>
+                                <td>$12.00</td>
+                                <td><span class="label label-primary">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
 
 

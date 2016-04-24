@@ -19,7 +19,7 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/vr.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/product-description.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
