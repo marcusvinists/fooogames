@@ -24,7 +24,7 @@ primary key(id) );
 
 create table status_venda (
 id tinyint unsigned auto_increment not null, 
-status_venda varchar(15) unique, 
+status_venda varchar(50) unique, 
 primary key(id) );
 
 
@@ -94,9 +94,9 @@ foreign key(id_status_venda) references status_venda(id)
 ================================ Table ==============================*/
 
 BEGIN;
-insert into tipo_funcionario (tipo_funcionario) values ('administrador');
-insert into tipo_funcionario (tipo_funcionario) values ('funcionario');
-insert into tipo_funcionario (tipo_funcionario) values ('cliente');
+insert into tipo_usuario (tipo) values ('administrador');
+insert into tipo_usuario (tipo) values ('funcionario');
+insert into tipo_usuario (tipo) values ('cliente');
 COMMIT;
 
 BEGIN;
@@ -137,5 +137,3 @@ COMMIT;
 begin;
 
 commit;
-
-select * from tipo_usuario;
