@@ -179,7 +179,7 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form role="form">
+                    <form action="${pageContext.request.contextPath}/signup-result.jsp" method="post" >
                         <h2>Cadastre-se <small>Foogames.</small></h2>
                         <hr class="colorgraph">
                         <div class="row">

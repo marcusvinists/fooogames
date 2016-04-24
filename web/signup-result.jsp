@@ -165,12 +165,7 @@
             </div>
         </div>
 
-    <center>A <b>Foogames</b> é uma empresa de pequeno porte de desenvolvimento de softwares.<br>
-        A equipe é composta por: <b>Felipe, Jair, Marcelo, Marcus e Renato.</b><br>
-        Somos estudantes de Ciência da Computação na universidade Anhembi Morumbi.<br>
-        Compartilhamos da idéia de ganhar muito dinheiro vendendo joguinhos a preços absurdos.<br>
-        A qualidade não é o nosso foco, muito menos o cumprimento de prazos.<br>
-        HUEHU3HUEhue!!11!!!onze!!</center>
+    <center><h1>Sua conta foi criada com sucesso!</h1></center>
 
 
 

@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
 
-        <title>Foogames administrador</title>
+        <title>Foogames Administrador</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -172,7 +172,7 @@
         <div id="adminWrapper" class="container">
 
             <div class="row">
-                <h1 class="page-header">FooGames system administration</h1>
+                <h1 class="page-header">FooGames Administração do Sistema</h1>
 
 
                 <!--=================================================
@@ -186,7 +186,7 @@
                             <div class="panel-heading">
                                 <div class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
-                                        <h2>Insert a product on database</h2>
+                                        <h2>Inserir um produto no banco de dados</h2>
                                     </a>
                                 </div>
 
@@ -197,13 +197,13 @@
                                         <fieldset>
 
                                             <!-- Form Name -->
-                                            <legend>Insert a new product</legend>
+                                            <legend>Inserir um novo produto</legend>
 
                                             <!-- invisible so post know what we're doing-->
                                             <input name='op' type="text"  value="add" hidden="">
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="name">Name</label>  
+                                                <label class="col-md-4 control-label" for="name">Nome</label>  
                                                 <div class="col-md-4">
                                                     <input id="insertname" name="name" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -212,21 +212,21 @@
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="category">Category</label>
+                                                <label class="col-md-4 control-label" for="category">Categoria</label>
                                                 <div class="col-md-4">
                                                     <select id="insertcategory" name="category" class="form-control">
                                                         <option value="1">Console</option>
-                                                        <option value="2">Game</option>
-                                                        <option value="3">Accessory</option>
+                                                        <option value="2">Jogo</option>
+                                                        <option value="3">Accessórioy</option>
                                                         <option value="4">VR</option>
-                                                        <option value="5">Other</option>
+                                                        <option value="5">Outro</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="plataform">Platform</label>
+                                                <label class="col-md-4 control-label" for="plataform">Plataforma</label>
                                                 <div class="col-md-4">
                                                     <select id="insertConsole" name="plataform" class="form-control">
                                                         <option value="1">Xbox One</option>
@@ -235,14 +235,14 @@
                                                         <option value="4">Wii U</option>
                                                         <option value="5">3DS</option>
                                                         <option value="6">PS Vita</option>
-                                                        <option value="7">Other</option>
+                                                        <option value="7">Outro</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="quantity">Quantity</label>  
+                                                <label class="col-md-4 control-label" for="quantity">Quantidade</label>  
                                                 <div class="col-md-4">
                                                     <input id="insertQuantity" name="quantity" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -251,7 +251,7 @@
 
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="description">Description</label>
+                                                <label class="col-md-4 control-label" for="description">Descrição</label>
                                                 <div class="col-md-4">                     
                                                     <textarea class="form-control" id="insertDescription" name="description"></textarea>
                                                 </div>
@@ -264,7 +264,7 @@
                                         <div class="form-group">
                                           <label class="col-md-4 control-label" for="submit"></label>
                                           <div class="col-md-4">
-                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                            <button id="submit" name="submit" class="btn btn-primary">Enviar</button>
                                           </div>
                                         </div>
                                     </form>
@@ -280,7 +280,7 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="">
-                                        <h2>Update a product on database</h2>
+                                        <h2>Atualizar um produto no banco de dados</h2>
                                     </a>
                                 </h4>
 
@@ -293,24 +293,24 @@
                                         <fieldset>
 
                                             <!-- Form Name -->
-                                            <legend>Update product information</legend>
+                                            <legend>Atualizar informações de um produto</legend>
                                             <br>
-                                            <h4> The id of the item you want to update</h4>
+                                            <h4>ID do item que deseja atualizar</h4>
                                             <br>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="id">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">ID do item</label>  
                                                 <div class="col-md-4">
                                                     <input id="updateId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
                                                 </div>
                                             </div>
                                             <br><br>
-                                            <h4> Fields of the item you want to update</h4>
+                                            <h4>Campos do item que deseja atualizar</h4>
                                             <br>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="name">Name</label>  
+                                                <label class="col-md-4 control-label" for="name">Nome</label>  
                                                 <div class="col-md-4">
                                                     <input id="insertname" name="name" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -319,21 +319,21 @@
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="category">Category</label>
+                                                <label class="col-md-4 control-label" for="category">Catergoria</label>
                                                 <div class="col-md-4">
                                                     <select id="insertcategory" name="category" class="form-control">
                                                         <option value="1">Console</option>
-                                                        <option value="2">Game</option>
-                                                        <option value="3">Accessory</option>
+                                                        <option value="2">Jogo</option>
+                                                        <option value="3">Accessório</option>
                                                         <option value="4">VR</option>
-                                                        <option value="5">Other</option>
+                                                        <option value="5">Outro</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <!-- Select Basic -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="plataform">Platform</label>
+                                                <label class="col-md-4 control-label" for="plataform">Plataaform</label>
                                                 <div class="col-md-4">
                                                     <select id="insertConsole" name="plataform" class="form-control">
                                                         <option value="1">Xbox One</option>
@@ -342,14 +342,14 @@
                                                         <option value="4">Wii U</option>
                                                         <option value="5">3DS</option>
                                                         <option value="6">PS Vita</option>
-                                                        <option value="7">Other</option>
+                                                        <option value="7">Outro</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="quantity">Quantity</label>  
+                                                <label class="col-md-4 control-label" for="quantity">Quantidade</label>  
                                                 <div class="col-md-4">
                                                     <input id="insertQuantity" name="quantity" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -358,7 +358,7 @@
 
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="description">Description</label>
+                                                <label class="col-md-4 control-label" for="description">Descrição</label>
                                                 <div class="col-md-4">                     
                                                     <textarea class="form-control" id="insertDescription" name="description"></textarea>
                                                 </div>
@@ -371,7 +371,7 @@
                                         <div class="form-group">
                                           <label class="col-md-4 control-label" for="submit"></label>
                                           <div class="col-md-4">
-                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                            <button id="submit" name="submit" class="btn btn-primary">Enviar</button>
                                           </div>
                                         </div>
                                    
@@ -386,7 +386,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
-                                            <h2>Remove a product from database</h2>
+                                            <h2>Remover um produto do banco de dados</h2>
                                         </a>
                                     </h4>
 
@@ -400,7 +400,7 @@
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="id">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">ID do item</label>  
                                                 <div class="col-md-4">
                                                     <input id="removeId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -413,7 +413,7 @@
                                         <div class="form-group">
                                           <label class="col-md-4 control-label" for="submit"></label>
                                           <div class="col-md-4">
-                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                            <button id="submit" name="submit" class="btn btn-primary">Enviar</button>
                                           </div>
                                         </div>
                                     </form>
@@ -427,7 +427,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="">
-                                            <h2>Consultations of products</h2>
+                                            <h2>Consulta de produtos</h2>
                                         </a>
                                     </h4>
 
@@ -440,7 +440,7 @@
 
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="id">Item id</label>  
+                                                <label class="col-md-4 control-label" for="id">ID do item</label>  
                                                 <div class="col-md-4">
                                                     <input id="consultId" name="id" type="text" placeholder="" class="form-control input-md" required="">
 
@@ -453,7 +453,7 @@
                                         <div class="form-group">
                                           <label class="col-md-4 control-label" for="submit"></label>
                                           <div class="col-md-4">
-                                            <button id="submit" name="submit" class="btn btn-primary">submit</button>
+                                            <button id="submit" name="submit" class="btn btn-primary">Enviar</button>
                                           </div>
                                         </div>
                                     </form>
@@ -468,7 +468,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a  href="report.jsp" class="">
-                                            <h2>Generate site report</h2>
+                                            <h2>Gerar relatório do site</h2>
                                         </a>
                                     </h4>
 
