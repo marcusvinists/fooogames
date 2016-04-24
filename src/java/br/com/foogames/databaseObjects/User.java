@@ -36,11 +36,7 @@ private boolean newsletter;
     public int getTipo_usuario_id() {
         return tipo_usuario_id;
     }
-
-    public void setTipo_usuario_id(int tipo_usuario_id) {
-        this.tipo_usuario_id = tipo_usuario_id;
-    }
-
+    
     public String getLogin() {
         return login;
     }
