@@ -51,7 +51,7 @@
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
                                     <li><a href="redirect.htm?page=about">Sobre nós</a></li>
-                                    <li><a href="about.jsp">Contato</a></li>
+                                    <li><a href="redirect.htm?page=about">Contato</a></li>
                                      <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
                                 <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
