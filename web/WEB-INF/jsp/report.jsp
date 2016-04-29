@@ -50,12 +50,12 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
-                                    <li><a href="Contato.jsp">Contato</a></li>
-                                     <li><a href="admin.jsp">Administrador</a></li>
+                                    <li><a href="redirect.htm?page=about">Sobre nós</a></li>
+                                    <li><a href="about.jsp">Contato</a></li>
+                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
-                                <form class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                                <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                 </form>
 
                                 <!-- =======================================
@@ -64,56 +64,56 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">VR</a></li>
@@ -123,7 +123,7 @@
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
@@ -165,22 +165,146 @@
             </div>
         </div>
 
-    <center>A <b>Foogames</b> é uma empresa de pequeno porte de desenvolvimento de softwares.<br>
-        A equipe é composta por: <b>Felipe, Jair, Marcelo, Marcus e Renato.</b><br>
-        Somos estudantes de Ciência da Computação na universidade Anhembi Morumbi.<br>
-        Compartilhamos da idéia de ganhar muito dinheiro vendendo joguinhos a preços absurdos.<br>
-        A qualidade não é o nosso foco, muito menos o cumprimento de prazos.<br>
-        HUEHU3HUEhue!!11!!!onze!!</center>
 
+        <!-- Admin features
+        ================================================== -->
+  
+            <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Quarterly Sales</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="performance1" style="height: 270px;">
+                        <img alt="Quaterly sales graphic" src="${pageContext.request.contextPath}/resources/images/report/report1.png"
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Quarterly Sales</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Quarterly Sales reports show that the campaign made tremendous progress towards the end of the period. 
+                        This signifies important changes as opposed to last-year campaign, which demonstrated equal growth. 
+                        It underlines the necessety of regular reports, to detect such changes in earlier stages.                         
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Quarterly Sales</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="performance2" style="height: 270px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Visits Stats</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Campaign budgets have proven to have little influence over the predictability and stable flow of visitors. 
+                        This underlines the necessity for additioal statistics and further analysis. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Quarterly Sales</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="performance3" style="height: 270px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Budget Stats</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        The budget report is in par with the initial business plan. No deviations were detected. 
+                        Better funding is not guaranteed to have direct sales impact, unless further analysis is performed. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
 
+<!-- you need to include the shieldui css and js assets in order for the charts to work -->
+<link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+<script type="text/javascript">
+    jQuery(function ($) {
+        var performance = [12, 3, 4, 2, 12, 3, 4, 17, 22, 34, 54, 67],
+            visits = [3, 9, 12, 14, 22, 32, 45, 12, 67, 45, 55, 7],
+            budget = [23, 19, 11, 134, 242, 352, 435, 22, 637, 445, 555, 57];
+
+        $("#performance1").shieldChart({
+            primaryHeader: {
+                text: "Quarterly Performance"
+            },
+            dataSeries: [{
+                seriesType: "area",
+                collectionAlias: "Q Data",
+                data: performance
+            }]
+        });
+
+        $("#performance2").shieldChart({
+            primaryHeader: {
+                text: "Visitors"
+            },
+            dataSeries: [{
+                seriesType: "bar",
+                collectionAlias: "Visits",
+                data: visits
+            }]
+        });
+
+        $("#performance3").shieldChart({
+            primaryHeader: {
+                text: "Budget"
+            },
+            dataSeries: [{
+                seriesType: "line",
+                collectionAlias: "Budget",
+                data: budget
+            }]
+        });
+    });
+</script>
+            
+
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+            <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
 </html>

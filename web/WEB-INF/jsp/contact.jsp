@@ -58,12 +58,12 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
-                                    <li><a href="${pageContext.request.contextPath}/Contato.jsp">Contato</a></li>
-                                     <li><a href="admin.jsp">Administrador</a></li>
+                                    <li><a href="redirect.htm?page=about">Sobre nós</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/redirect.htm?page=contact">Contato</a></li>
+                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
                                 <form class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                 </form>
 
                                 <!-- =======================================
@@ -141,14 +141,14 @@
                                             <li><a href="#">One more separated link</a></li>-->
                                         </ul>
                                     </li>
-                                    <li><a href="search.jsp">VR</a></li>
-                                    <li><a href="search.jsp">Cool Stuff</a></li>
+                                    <li><a href="redirect.htm?page=search">VR</a></li>
+                                    <li><a href="redirect.htm?page=search">Cool Stuff</a></li>
                                 </ul>                    
 
                                <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastre-se</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">

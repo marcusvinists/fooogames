@@ -8,26 +8,43 @@ package br.com.foogames.controllers;
 import java.net.BindException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.web.servlet.view.RedirectView;
 
-
-public class Controller extends AbstractController {
+@Controller
+public class MainController extends AbstractController {
     
-    public Controller() {
-        
-        
-    }
-    
+     /**
+      * Redirect with request and response
+      * @param request
+      * @param response
+      * @return
+      * @throws Exception 
+      */
     @Override
+    @RequestMapping("redirect")
     protected ModelAndView handleRequestInternal(
             HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-            ModelAndView mv = new ModelAndView("");
+            HttpServletResponse response) throws Exception {  
+            //page to redirec
+            String redirectUrl = request.getParameter("page");
+            ModelAndView mv = new ModelAndView(redirectUrl);
             return mv;
     }
     
-    
+    /**
+     * Redirect with request response and object received by forms using spring
+     * bind.
+     * @param request
+     * @param response
+     * @param command
+     * @param errors
+     * @return
+     * @throws Exception 
+     */
      protected ModelAndView handleRequestInternal(
             HttpServletRequest request,
             HttpServletResponse response,

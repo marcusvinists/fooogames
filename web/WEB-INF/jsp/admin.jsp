@@ -50,12 +50,12 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
-                                    <li><a href="Contato.jsp">Contato</a></li>
-                                     <li><a href="admin.jsp">Administrador</a></li>
+                                    <li><a href="redirect.htm?page=about">Sobre nós</a></li>
+                                    <li><a href="redirect.htm?page=contact">Contato</a></li>
+                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
-                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                                <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                 </form>
 
                                 <!-- =======================================
@@ -64,56 +64,56 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">Ação</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">VR</a></li>
@@ -123,7 +123,7 @@
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
@@ -467,7 +467,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a  href="report.jsp" class="">
+                                        <a  href="redirect.htm?page=report" class="">
                                             <h2>Generate site report</h2>
                                         </a>
                                     </h4>

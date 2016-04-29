@@ -1,5 +1,6 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
-        
 
-        <title>Foogames</title>
+        <title>Foogames busca</title>
 
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,16 +19,15 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/vr.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/signup.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
 
-
-
     </head>
 
-    <!-- NAVBAR
+    <body>
+   <!-- NAVBAR
     ================================================== -->
     <body>
         <div id="navbarFloater">
@@ -51,12 +50,12 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nÛs</a></li>
-                                    <li><a href="Contato.jsp">Contato</a></li>
-                                    <li><a href="admin.jsp">Administrador</a></li>
+                                    <li><a href="redirect.htm?page=about">Sobre n√≥s</a></li>
+                                    <li><a href="redirect.htm?page=contact">Contato</a></li>
+                                    <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
-                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                                <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                 </form>
 
                                 <!-- =======================================
@@ -65,66 +64,66 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">AÁ„o</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">A√ß√£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="search.jsp">VR</a></li>
-                                    <li><a href="search.jsp">Coisas Legais</a></li>
+                                    <li><a href="redirect.htm?page=search">VR</a></li>
+                                    <li><a href="redirect.htm?page=search">Coisas Legais</a></li>
                                 </ul>                            
 
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
@@ -135,8 +134,8 @@
                                                     <div class="col-md-12">
                                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">EndereÁo de e-mail</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="EndereÁo de e-mail" required>
+                                                                <label class="sr-only" for="exampleInputEmail2">Endere√ßo de e-mail</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endere√ßo de e-mail" required>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="sr-only" for="exampleInputPassword2">Senha</label>
@@ -165,21 +164,48 @@
                 </div>
             </div>
         </div>
+                                        
+                                        
+                                        
+        <!-- =========================================================
+        search   ======================================= -->
+        <div class="container">
 
-        <!-- VR
-        ================================================== -->
-       
+            <hgroup class="mb20">
+                <h1>Resultados da busca:</h1>
+                <h2 class="lead"><strong class="text-danger">1</strong> results were found for the search for <strong class="text-danger">Tom Clancy's The Division</strong></h2>								
+            </hgroup>
+
+            <section class="col-xs-12 col-sm-6 col-md-12">
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <img src="http://www.gamestop.com/common/images/sbox/102034a.jpg" alt="Lorem ipsum" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+                        <h3>Tom Clancy's The Division for PC</h3>
+                        <p>The Division, uma unidade de agentes t√°ticos, levam uma vida aparentemente normal entre n√≥s, eles s√£o treinados para operar independentemente do comando. Lutando para evitar a queda da sociedade, os agentes v√£o se encontrar presos em uma conspira√ß√£o √©pica..</p>						
+                    </div>
+                    <span class="clearfix borda"></span>
+                </article>	
+
+            </section>
+        </div>
+
 
 
 
 
         <!-- Bootstrap core JavaScript
-        ================================================== -->
+           ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Custom js for this page -->
+        <script src="${pageContext.request.contextPath}/resources/js/signup.js"></script>
     </body>
 </html>

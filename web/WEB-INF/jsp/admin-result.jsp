@@ -1,3 +1,7 @@
+
+<%@page import="java.util.Random"%>
+<%@page import="java.text.ParseException"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +12,6 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
-        
 
         <title>Foogames</title>
 
@@ -19,7 +22,7 @@
         <link href="${pageContext.request.contextPath}/resources/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="${pageContext.request.contextPath}/resources/css/product-description.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
 
         <!-- Custom menu style -->
         <link href="${pageContext.request.contextPath}/resources/css/menu.css" rel="stylesheet">
@@ -51,12 +54,12 @@
                                 <!-- =======================================
                                ============== First NavBar ============-->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="${pageContext.request.contextPath}/about.jsp">Sobre nós</a></li>
-                                    <li><a href="Contato.jsp">Contato</a></li>
-                                    <li><a href="admin.jsp">Administrador</a></li>
+                                    <li><a href="redirect.htm?page=about">Sobre nÃ³s</a></li>
+                                    <li><a href="#contact">Contato</a></li>
+                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                 </ul>
-                                <form action="search.jsp" class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                                <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                 </form>
 
                                 <!-- =======================================
@@ -65,66 +68,66 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="search.jsp">Ação</a></li>
-                                            <li><a href="search.jsp">Aventura</a></li>
-                                            <li><a href="search.jsp">Corrida</a></li>
-                                            <li><a href="search.jsp">Outros</a></li>
+                                            <li><a href="redirect.htm?page=search">AÃ§Ã£o</a></li>
+                                            <li><a href="redirect.htm?page=search">Aventura</a></li>
+                                            <li><a href="redirect.htm?page=search">Corrida</a></li>
+                                            <li><a href="redirect.htm?page=search">Outros</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="search.jsp">VR</a></li>
-                                    <li><a href="search.jsp">Coisas Legais</a></li>
+                                    <li><a href="#contact">VR</a></li>
+                                    <li><a href="#contact">Coisas Legais</a></li>
                                 </ul>                            
 
                                 <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastrar</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
@@ -135,8 +138,8 @@
                                                     <div class="col-md-12">
                                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                                             <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">Endereço de e-mail</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de e-mail" required>
+                                                                <label class="sr-only" for="exampleInputEmail2">EndereÃ§o de e-mail</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="EndereÃ§o de e-mail" required>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="sr-only" for="exampleInputPassword2">Senha</label>
@@ -165,21 +168,97 @@
                 </div>
             </div>
         </div>
+                    
+                                         <!-- Start of admin result
+           ================================================== -->
+       <div id="adminWrapper" class="container">
+         <%
+             String operation = request.getParameter("op");
+             String id = request.getParameter("id");
+             String name = request.getParameter("name");
+                 String category = request.getParameter("category");
+                 String plataform = request.getParameter("plataform");
+                 String quantity = request.getParameter("quantity");
+                 String description = request.getParameter("description");
+                 
+                 Random rand = new Random();
+                  int randomNum = rand.nextInt((100 - 1) + 1) + 1;
+             
+             if(operation.equalsIgnoreCase("add")){
+                 
+                 
+                 
+         %>        
+         <div class="adminItem">
+            <h2>Item added</h2>   
+            <ul class="list-group">
+                <li class="list-group-item">Id item: <%out.println(randomNum);%></li>
+                <li class="list-group-item">Name: <%out.println(name);%></li>
+                <li class="list-group-item">Category: <%out.println(category);%></li>
+                <li class="list-group-item">Plataform: <%out.println(plataform);%></li>
+                <li class="list-group-item">Quantity: <%out.println(quantity);%></li>
+                <li class="list-group-item">Description: <%out.println(description);%></li>
+              </ul>  
+         </div>
+         
+         <%    }else if(operation.equalsIgnoreCase("remove")){
+         %>
+           <div class="adminItem">
+            <h2>Item removed</h2>   
+            <ul class="list-group">
+                <li class="list-group-item">Id item: <%out.println(id);%></li>
+                <li class="list-group-item">Name: <%out.println("Nome do item");%></li>
+                <li class="list-group-item">Category: <%out.println("Categoria");%></li>
+                <li class="list-group-item">Plataform: <%out.println("Praysteixio 4");%></li>
+                <li class="list-group-item">Quantity: <%out.println("999");%></li>
+                <li class="list-group-item">Description: <%out.println("Po deletou o prei");%></li>
+              </ul>  
+         </div>        
+         
+         <%   }else if(operation.equalsIgnoreCase("alter")){
+          %>       
+             <h2>Item altered</h2>   
+            <ul class="list-group">
+                <li class="list-group-item">Id item: <%out.println(id);%></li>
+                <li class="list-group-item">Name: <%out.println(name);%></li>
+                <li class="list-group-item">Category: <%out.println(category);%></li>
+                <li class="list-group-item">platform <%out.println(plataform);%></li>
+                <li class="list-group-item">Quantity: <%out.println(quantity);%></li>
+                <li class="list-group-item">Description: <%out.println(description);%></li>
+              </ul>  
+         </div>  
+          <% }else if(operation.equalsIgnoreCase("consult")){
+           %>      
+             <h2>Consulta do Item</h2>   
+            <ul class="list-group">
+                <li class="list-group-item">Id item: <%out.println(id);%></li>
+                <li class="list-group-item">Name: <%out.println("Nome do item");%></li>
+                <li class="list-group-item">Category: <%out.println("Categoria");%></li>
+                <li class="list-group-item">Plataform: <%out.println("Praysteixio 4");%></li>
+                <li class="list-group-item">Quantity: <%out.println("999");%></li>
+                <li class="list-group-item">Description: <%out.println("Video game legal :D");%></li>
+              </ul>  
+         </div>  
+           <%}else{
+                 out.println("Operation not supported");
+             }%>
+         
 
-        <!-- VR
-        ================================================== -->
-       
-
-
+        </div>
+        
+        <!-- End of admin result
+           ================================================== -->
 
 
         <!-- Bootstrap core JavaScript
-        ================================================== -->
+           ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-    </body>
+        <!-- Custom js for this page -->
+        <script src="${pageContext.request.contextPath}/resources/js/signup.js"></script>
+    
 </html>
