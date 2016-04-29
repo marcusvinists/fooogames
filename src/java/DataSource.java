@@ -10,8 +10,8 @@ public class DataSource {
     public DataSource(String nomeBD) throws SQLException {
         String url, user, pass;
         url = "jdbc:mysql://localhost:3306/" + nomeBD;
-        user = "root";
-        pass = "";
+        user = "foogames";
+        pass = "foogames";
         DriverManager.getConnection(url, user, pass);
 
     }

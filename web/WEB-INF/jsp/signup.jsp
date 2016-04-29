@@ -195,7 +195,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Apelido" tabindex="3">
+                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Login" tabindex="3">
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de e-mail" tabindex="4">
