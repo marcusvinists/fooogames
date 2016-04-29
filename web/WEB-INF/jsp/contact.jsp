@@ -142,7 +142,7 @@
                                 <!--  ====================================== 
                                  ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastre-se</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">

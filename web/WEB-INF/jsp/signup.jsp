@@ -131,7 +131,7 @@
                                <!--  ====================================== 
                                 ======================Sign in Sign On ===== -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="${pageContext.request.contextPath}/signup.jsp">Cadastre-se</a></li>
+                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar 
                                             <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
@@ -179,7 +179,7 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form action="${pageContext.request.contextPath}/signup-result.jsp" method="post" >
+                    <form action="${pageContext.request.contextPath}/redirect.htm?page=signup-result" method="post" >
                         <h2>Cadastre-se <small>Foogames.</small></h2>
                         <hr class="colorgraph">
                         <div class="row">
