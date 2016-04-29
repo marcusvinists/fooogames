@@ -7,5 +7,10 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/foogames?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">foogames</property>
     <property name="hibernate.connection.password">foogames</property>
+    <!-- Mappings for database objects-->
+    <mapping class="br.com.foogames.database.objects.Product"/>
+    <mapping class="br.com.foogames.database.objects.Purchase"/>
+    <mapping class="br.com.foogames.database.objects.Sales"/>
+    <mapping class="br.com.foogames.database.objects.User"/>
   </session-factory>
 </hibernate-configuration>

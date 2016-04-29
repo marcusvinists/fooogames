@@ -3,16 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.foogames.databaseObjects;
+package br.com.foogames.database.objects;
 
 import java.time.LocalDate;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author vini
  */
+@Entity
 public class User {
     
+@Id @GeneratedValue
 private Long id;
 private int tipo_usuario_id;
 private String login;
@@ -35,6 +40,10 @@ private boolean newsletter;
 
     public int getTipo_usuario_id() {
         return tipo_usuario_id;
+    }
+
+    public void setTipo_usuario_id(int tipo_usuario_id) {
+        this.tipo_usuario_id = tipo_usuario_id;
     }
     
     public String getLogin() {
