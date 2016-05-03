@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico">
-        
+
 
         <title>Foogames</title>
 
@@ -27,10 +27,11 @@
 
 
     </head>
+    <body>
 
     <!-- NAVBAR
     ================================================== -->
-    <body>
+    
         <div id="navbarFloater">
             <div class="navbar-wrapper">
                 <div id="bigNavbarContainer" class="container">
@@ -54,11 +55,25 @@
                                     <li><a href="redirect.htm?page=about">Sobre nós</a></li>
                                     <li><a href="redirect.htm?page=contact">Contato</a></li>
                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
-                                </ul>
-                                <form action="redirect.htm?page=search" class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
-                                </form>
+                                    <li id="listSearch"> 
+                                        <form action="search.htm" class="navbar-form navbar-right" id="search" method="GET">
+                                            <input name="search" type="text" class="form-control" placeholder="Buscar..." id="searchInput">
+                                            
+                                        </form>
+                                    </li>
 
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 1 Itens
+                                            <img src="${pageContext.request.contextPath}/resources/images/menu/cart.jpg" alt="login" width="20px" height="15px">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="redirect.htm?page=cart" >Item1 </a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
                                 <!-- =======================================
                                 ============== Second NavBar ============-->
                                 <ul class="nav navbar-nav">

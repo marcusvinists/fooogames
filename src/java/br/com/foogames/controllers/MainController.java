@@ -16,6 +16,26 @@ import org.springframework.web.servlet.mvc.AbstractController;
 @Controller
 public class MainController extends AbstractController {
     
+     
+    
+    
+    /**
+      * search controller
+      * @param request
+      * @param response
+      * @return
+      * @throws Exception 
+      */
+    
+    @RequestMapping("search")
+    protected ModelAndView search(
+            HttpServletRequest request,
+            HttpServletResponse response) throws Exception {  
+            //page to redirec
+            String search = request.getParameter("search");
+            ModelAndView mv = new ModelAndView("search");
+            return mv;
+    }
      /**
       * Redirect with request and response
       * @param request

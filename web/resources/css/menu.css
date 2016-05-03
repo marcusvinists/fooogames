@@ -76,11 +76,12 @@ display: block;
  }
  
  /*Ajustes de largura do search*/
+ 
   #search{
-      width: 50%;
+      width: 100%;
   }
   #searchInput{
-      width: 90%;
+      width: 100%;
   }
 
   /*Ajuste tamanho Navbar*/
@@ -93,3 +94,8 @@ display: block;
    padding: 15px;
    min-width: 250px;
 }
+
+#listSearch{
+    min-width: 380px;
+}
+

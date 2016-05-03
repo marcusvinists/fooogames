@@ -33,155 +33,6 @@
   ================================================== -->
     <body>
         <div id="navbarFloater">
-            <div class="navbar-wrapper">
-                <div id="bigNavbarContainer" class="container">
-                    <nav class="navbar navbar-inverse navbar-static-top">                    
-                        <div id="navbarContainer"  class="container">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand" href="${pageContext.request.contextPath}/index.htm">FooGames</a>
-                            </div>
-
-                            <div id="navbar" class="navbar-collapse collapse">
-
-                                <!-- =======================================
-                               ============== First NavBar ============-->
-                                <ul class="nav navbar-nav">
-                                    <li><a href="redirect.htm?page=about">Sobre nós</a></li>
-                                    <li><a href="redirect.htm?page=contact">Contato</a></li>
-                                    <li><a href="redirect.htm?page=admin">Administrador</a></li>
-                                </ul>
-                                <form class="navbar-form navbar-right" id="search">
-                                    <input type="text" class="form-control" placeholder="Buscar" id="searchInput">
-                                </form>
-
-                                <!-- =======================================
-                                ============== Second NavBar ============-->
-                                <ul class="nav navbar-nav">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Xbox One <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!-- <li><a href="#">Action</a></li>
-                                             <li><a href="#">Another action</a></li>
-                                             <li><a href="#">Something else here</a></li>
-                                             <li role="separator" class="divider"></li>
-                                             <li class="dropdown-header">Nav header</li>
-                                             <li><a href="#">Separated link</a></li>
-                                             <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS4 <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wii U <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3DS <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PS Vita <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>-->
-                                        </ul>
-                                    </li>
-                                    <li><a href="redirect.htm?page=search">VR</a></li>
-                                    <li><a href="redirect.htm?page=search">Cool Stuff</a></li>
-                                </ul>                    
-
-                                <!--  ====================================== 
-                                 ======================Sign in Sign On ===== -->
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="redirect.htm?page=signup">Cadastre-se</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login
-                                            <img src="${pageContext.request.contextPath}/resources/images/menu/logIn.png" alt="login" width="10px" height="10px">
-                                        </a>
-                                        <ul id="signInOutDropdown" class="dropdown-menu" >
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                                            <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputEmail2">Endereço de Email</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="sr-only" for="exampleInputPassword2">Senha</label>
-                                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                            </div>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox">Lembrar dados
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <button type="submit" class="btn btn-success btn-block">Login</button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-
-                </div>
-            </div>
         </div>
 
         <!-- <div id="containerDados" class="container">    
@@ -245,10 +96,6 @@
             
           </div>  -->
 
-
-        <script src="js/Mascaras.js">
-
-        </script>
 
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
@@ -318,5 +165,8 @@
         <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="${pageContext.request.contextPath}/resources/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Script load menu -->
+        <script src="${pageContext.request.contextPath}/resources/js/insertMenu.js" type="text/javascript"></script> 
+    
     </body>
 </html>
