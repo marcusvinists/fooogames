@@ -31,11 +31,12 @@ public class MainController extends AbstractController {
     protected ModelAndView search(
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {  
-            //page to redirec
-            String search = request.getParameter("search");
+            //product do search
+            String search = request.getParameter("q");
             ModelAndView mv = new ModelAndView("search");
             return mv;
     }
+    
      /**
       * Redirect with request and response
       * @param request

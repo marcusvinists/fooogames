@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +32,7 @@
     <body>
         <!-- NAVBAR
    ================================================== -->
-    
+
         <div id="navbarFloater">
         </div>
 
@@ -44,20 +45,13 @@
                     <form action="${pageContext.request.contextPath}/redirect.htm?page=signup-result" method="post" >
                         <h2>Cadastre-se <small>Foogames.</small></h2>
                         <hr class="colorgraph">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Primeiro nome" tabindex="1">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Último nome" tabindex="2">
-                                </div>
-                            </div>
+                        <input type="hidden" name="tipo_usuario_id" value="3" id="last_name">
+                        <input type="hidden" name="data_inscricao" value=<%LocalDate.now().toString();%> id="last_name">
+                        <div class="form-group">
+                            <input type="text" name="nome" id="last_name" class="form-control input-lg" placeholder="Nome completo" tabindex="2">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Login" tabindex="3">
+                            <input type="text" name="login" id="display_name" class="form-control input-lg" placeholder="Login" tabindex="3">
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de e-mail" tabindex="4">
@@ -65,19 +59,98 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+                                    <input type="text" name="cpf" id="cpf" class="form-control input-lg" placeholder="CPF" tabindex="5">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmação de senha" tabindex="6">
+                                    <input type="text" name="data_nascimento" id="data_nascimento" class="form-control input-lg" placeholder="Nascido em AAAA-MM-DD" tabindex="6">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                             <input type="text" name="cidade" id="cidade" class="form-control input-lg" placeholder="Cidade" tabindex="7">
+                        </div>
+                       <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="cep" id="cep" class="form-control input-lg" placeholder="CEP" tabindex="8">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <div class="form-group">
+                                     <select id="uf" name="uf" class="form-control input-lg" placeholder="UF" tabindex="9">
+                                            <option value="">UF</option>
+                                            <option value="AC">AC</option>
+                                            <option value="AL">AL</option>
+                                            <option value="AP">AP</option>
+                                            <option value="AM">AM</option>
+                                            <option value="BA">BA</option>
+                                            <option value="CE">CE</option>
+                                            <option value="DF">DF</option>
+                                            <option value="ES">ES</option>
+                                            <option value="GO">GO</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MT">MT</option>
+                                            <option value="MS">MS</option>
+                                            <option value="MG">MG</option>
+                                            <option value="PA">PA</option>
+                                            <option value="PB">PB</option>
+                                            <option value="PR">PR</option>
+                                            <option value="PE">PE</option>
+                                            <option value="PI">PI</option>
+                                            <option value="RJ">RJ</option>
+                                            <option value="RN">RN</option>
+                                            <option value="RS">RS</option>
+                                            <option value="RO">RO</option>
+                                            <option value="RR">RR</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SP">SP</option>
+                                            <option value="SE">SE</option>
+                                            <option value="TO">TO</option>
+                                          </select>
+                                </div>
+                            </div>
+                           
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <div class="form-group">
+                                     <input type="text" name="numero_endereco" id="numero_endereco" class="form-control input-lg" placeholder="No. | Lt." tabindex="10">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="endereco" id="endereco" class="form-control input-lg" placeholder="Endereco" tabindex="11">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="telefone_contato" id="telefone_contato" class="form-control input-lg" placeholder="Telefone" tabindex="12">
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="13">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmação de senha" tabindex="14">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
+                            <label class="col-xs-12 col-sm-6 col-md-6 control-label" for="newsletter">Deseja receber newsletter?</label>
+                              <label class="checkbox-inline" for="newsletter-0">
+                                <input type="checkbox" name="newsletter" id="newsletter-0" value="0">
+                                Sim
+                              </label>
+                           
+                          </div>
+                        <br>
+                        <div class="row">
                             <div class="col-xs-4 col-sm-3 col-md-3">
                                 <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info" tabindex="7"> Eu concordo</button>
+                                    <button type="button" class="btn" data-color="info" tabindex="15"> Eu concordo</button>
                                     <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
                                 </span>
                             </div>
@@ -88,7 +161,7 @@
 
                         <hr class="colorgraph">
                         <div class="row">
-                            <div class="col-xs-12 col-md-6"><input type="submit" value="Registrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                            <div class="col-xs-12 col-md-6"><input type="submit" value="Registrar" class="btn btn-primary btn-block btn-lg" tabindex="16"></div>
                         </div>
                     </form>
                 </div>
@@ -207,6 +280,6 @@
         <script src="${pageContext.request.contextPath}/resources/js/insertMenu.js" type="text/javascript"></script> 
         <!-- Signup data validation script-->
         <script src="${pageContext.request.contextPath}/resources/js/signup.js"></script>
-        
+
     </body>
 </html>

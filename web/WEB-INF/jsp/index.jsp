@@ -57,7 +57,7 @@
                                     <li><a href="redirect.htm?page=admin">Administrador</a></li>
                                     <li id="listSearch"> 
                                         <form action="search.htm" class="navbar-form navbar-right" id="search" method="GET">
-                                            <input name="search" type="text" class="form-control" placeholder="Buscar..." id="searchInput">
+                                            <input name="q" type="text" class="form-control" placeholder="Buscar..." id="searchInput">
                                             
                                         </form>
                                     </li>
