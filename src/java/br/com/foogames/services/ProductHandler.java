@@ -29,4 +29,14 @@ public class ProductHandler implements Handler {
 
     }
 
+    @Override
+    public Object atualizar(Object obj, HttpServletRequest request) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Object deletar(HttpServletRequest request) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

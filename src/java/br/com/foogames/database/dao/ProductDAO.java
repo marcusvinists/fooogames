@@ -41,8 +41,8 @@ public class ProductDAO implements GenericDAO {
     @Override
     public List search(long id) throws SQLException {
         List<Product> list = new ArrayList<Product>();
-        PreparedStatement stm = con.prepareStatement(sql);
         String sql = "SELECT * FROM product (id) VALUE (?)";
+        PreparedStatement stm = con.prepareStatement(sql);
         ResultSet rs = stm.executeQuery(sql);
 
         while (rs.next()) {
