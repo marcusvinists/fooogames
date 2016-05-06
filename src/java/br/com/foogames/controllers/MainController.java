@@ -58,6 +58,7 @@ public class MainController extends AbstractController {
             String acao = request.getParameter("acao");
             String nomeDaClasse = "br.com.foogames.database.objects." + parametro;
             String nomeServico = "br.com.foogames.services." + service;
+            
             if(service != null){
             try {
                 Class classe = Class.forName(nomeDaClasse);
@@ -68,6 +69,7 @@ public class MainController extends AbstractController {
                 
                 if(acao!=null && acao.equalsIgnoreCase("preenche")){
                     Object objPreenchido = handler.preencher(obj,request);
+                    
                 }
 
             } catch (Exception e) {
