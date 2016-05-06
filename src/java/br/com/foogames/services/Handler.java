@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletRequest;
  * @author vini
  */
 public interface Handler {
-    
-    public Object preencher(Object obj,HttpServletRequest request);
-    
-    
+
+    public Object preencher(Object obj, HttpServletRequest request);
+    public Object atualizar(Object obj, HttpServletRequest request);
+    public Object deletar(HttpServletRequest request);
+
 }
