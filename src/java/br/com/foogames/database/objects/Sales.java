@@ -23,6 +23,18 @@ BigDecimal valor_total;
         return id;
     }
 
+    public void setId_produto(Long id_produto) {
+        this.id_produto = id_produto;
+    }
+
+    public void setId_usuario(Long id_usuario) {
+        this.id_usuario = id_usuario;
+    }
+
+    public void setId_status_venda(int id_status_venda) {
+        this.id_status_venda = id_status_venda;
+    }
+
     public Long getId_produto() {
         return id_produto;
     }

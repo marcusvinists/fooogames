@@ -78,5 +78,17 @@ private int quantidade;
         this.quantidade = quantidade;
     }
 
+    public void setPlataforma_id(int plataforma_id) {
+        this.plataforma_id = plataforma_id;
+    }
+
+    public void setCategoria_id(int categoria_id) {
+        this.categoria_id = categoria_id;
+    }
+
+    public void setTipo_jogo_id(int tipo_jogo_id) {
+        this.tipo_jogo_id = tipo_jogo_id;
+    }
+
 
 }
