@@ -14,9 +14,11 @@ import org.hibernate.Session;
  */
 public class hibernateDAO {
     
-    public void insert(Object obj){
+    public static void insert(Object obj){
         Session openSession = HibernateUtil.getSessionFactory().openSession();
         openSession.save(obj);
+        openSession.flush();
+        openSession.close();
     }
     
 }

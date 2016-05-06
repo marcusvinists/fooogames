@@ -55,6 +55,7 @@ public class MainController extends AbstractController {
             String redirectUrl = request.getParameter("page");
             String service = request.getParameter("service");
             String parametro = request.getParameter("classe");
+            String acao = request.getParameter("acao");
             String nomeDaClasse = "br.com.foogames.database.objects." + parametro;
             String nomeServico = "br.com.foogames.services." + service;
             if(service != null){
@@ -65,7 +66,9 @@ public class MainController extends AbstractController {
                 Class servico = Class.forName(nomeServico);
                 Handler handler = (Handler) servico.newInstance();
                 
-                handler.preencher(obj,request);
+                if(acao!=null && acao.equalsIgnoreCase("preenche")){
+                    Object objPreenchido = handler.preencher(obj,request);
+                }
 
             } catch (Exception e) {
                 throw new ServletException(

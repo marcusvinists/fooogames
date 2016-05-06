@@ -1,13 +1,15 @@
+package br.com.foogames.database.dao;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DataSource {
+public class DataSourceCon {
 
     private Connection con;
 
-    public DataSource(String nomeBD) throws SQLException {
+    public DataSourceCon(String nomeBD) throws SQLException {
         String url, user, pass;
         url = "jdbc:mysql://localhost:3306/" + nomeBD;
         user = "foogames";
