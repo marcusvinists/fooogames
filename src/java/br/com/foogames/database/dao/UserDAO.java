@@ -22,7 +22,7 @@ public class UserDAO implements GenericDAO {
 
     @Override
     public void insert(Object object) throws SQLException {
-        DataSourceCon data = new DataSourceCon("foogames");
+        DataSourceCon data = new DataSourceCon();
         Connection connection = data.getCon();
         
         User user = (User)object;
@@ -48,6 +48,8 @@ public class UserDAO implements GenericDAO {
         stmt.setDate(13, dataInscricao);
         stmt.setBoolean(14, user.isNewsletter());
         stmt.setString(15, user.getUf());
+        
+        
 
         stmt.executeUpdate();
         stmt.close();

@@ -6,9 +6,13 @@
 package br.com.foogames.services;
 
 import br.com.foogames.database.HibernateUtil;
+import br.com.foogames.database.dao.UserDAO;
 import br.com.foogames.database.dao.hibernateDAO;
 import br.com.foogames.database.objects.User;
+import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
 import org.hibernate.Session;
 
@@ -41,7 +45,12 @@ public class UserHandler implements Handler{
         user.setSenha(request.getParameter("password"));
         user.setNewsletter(Boolean.valueOf(request.getParameter("newsletter")));
         
-        
+        UserDAO dao = new UserDAO();
+        try {
+            dao.insert(user);
+        } catch (SQLException ex) {
+            System.out.println("Erro insert");
+        }
         
         return user;
     }
