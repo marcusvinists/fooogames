@@ -1,5 +1,6 @@
 <%@page import="java.time.LocalDate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,8 +46,10 @@
                     <form action="${pageContext.request.contextPath}/redirect.htm?page=signup-result" method="post" >
                         <h2>Cadastre-se <small>Foogames.</small></h2>
                         <hr class="colorgraph">
-                        <input type="hidden" name="tipo_usuario_id" value="3" id="last_name">
-                        <input type="hidden" name="data_inscricao" value=<%LocalDate.now().toString();%> id="last_name">
+                        <input type="hidden" name="service" value="UserHandler" >
+                        <input type="hidden" name="classe" value="User" >
+                        <input type="hidden" name="tipo_usuario_id" value="3">
+                        <input type="hidden" name="data_inscricao" value="<%LocalDate.now().toString();%>">
                         <div class="form-group">
                             <input type="text" name="nome" id="last_name" class="form-control input-lg" placeholder="Nome completo" tabindex="2">
                         </div>

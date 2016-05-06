@@ -32,6 +32,7 @@ private String cep;
 private String telefone_contato;
 private String email;
 private LocalDate data_inscricao;
+private String uf;
 private boolean newsletter;
 
     public Long getId() {
@@ -150,6 +151,11 @@ private boolean newsletter;
         this.newsletter = newsletter;
     }
 
+    public String getUf() {
+        return uf;
+    }
 
-    
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
 }

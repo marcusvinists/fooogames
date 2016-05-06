@@ -5,7 +5,9 @@
  */
 package br.com.foogames.controllers;
 
+import br.com.foogames.services.Handler;
 import java.net.BindException;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
@@ -51,6 +53,25 @@ public class MainController extends AbstractController {
             HttpServletResponse response) throws Exception {  
             //page to redirec
             String redirectUrl = request.getParameter("page");
+            String service = request.getParameter("service");
+            String parametro = request.getParameter("classe");
+            String nomeDaClasse = "br.com.foogames.database.objects." + parametro;
+            String nomeServico = "br.com.foogames.services." + service;
+            if(service != null){
+            try {
+                Class classe = Class.forName(nomeDaClasse);
+                Object obj = (Object)classe.newInstance();
+                
+                Class servico = Class.forName(nomeServico);
+                Handler handler = (Handler) servico.newInstance();
+                
+                handler.preencher(obj,request);
+
+            } catch (Exception e) {
+                throw new ServletException(
+                  "A lógica de negócios causou uma exceção", e);
+            }
+            }
             ModelAndView mv = new ModelAndView(redirectUrl);
             return mv;
     }
